@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
+	
+	<link href="norlid.css" rel="stylesheet">
+	<script>
+		
+// Handler for .ready() called.
+	$( document ).ready(function() {
+	//form validation
+	//custom language object
+	var myErrorFeedback = {
+		badInt: 'Please enter a number between 0 and 10.'
+	}	
+	$.validate({
+		//language object overwritten by custom language obejct
+		language : myErrorFeedback
+	});
+	});
+</script>
+</head>
+
+	
+	
+<body>
+	<div class="form">
+	<form action="https://s2331.t.eloqua.com/e/f2">
+		<div class="formunderline">
+	<input type="text" name="fullName" placeholder="Name" data-validation="required"
+				   data-validation-error-msg="UPS! du mangler at udfylde noget!">
+			</div>
+		<div class="formunderline">
+	<input type="text" name="emailAddress" placeholder="Email" data-validation="email"
+				   data-validation-error-msg="UPS! du mangler at udfylde noget!">
+			</div>
+		<div class="formunderline">
+	<input type="text" name="mobilePhone" placeholder="Phone" data-validation="number"
+				   data-validation-error-msg="UPS! du mangler at udfylde noget!">
+		</div>
+		<div class="flex">
+	<label class="checkcontainer"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam fugit consequuntur officia, nesciunt placeat odit. Adipisci deserunt eligendi, quasi perferendis.
+  <input type="checkbox" name="permission">
+  <span class="checkmark"></span>
+</label>
+			</div>
+		<input type="hidden" name="elqFormName" value="giv-mig-praktikplads">
+		<input type="hidden" name="elqSiteID" value="2331">
+	<button>Send</button>
+	</form>
+		</div>
+	
+	
+	
+</body>
+</html>
