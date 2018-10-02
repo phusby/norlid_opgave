@@ -44,6 +44,23 @@
 			width: 100%;
 			padding: 10px 0;
 		}
+.left {
+	margin-right: 40px;
+}
+.right {
+	margin-left: 40px;
+}
+.icon {
+	margin-top: 50px;
+}
+.icontext {
+	padding-top: 25px;
+	color: white;
+	font-weight: 300;
+	max-width: 200px;
+	margin: 0 auto;
+	padding-bottom: 25px;
+}
 
 ::placeholder {
 	color: rgba(72,72,72,1.00);
@@ -124,6 +141,7 @@ input.error {
 	background-color: #e6007e;
 	padding: 10px 60px;
 	border: none;
+	color: white;
 }	
 	
 
@@ -136,4 +154,58 @@ input.error {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+.bluegreen {
+	margin-top: 50px;
+	background-color: #2a697b;
+	padding-bottom: 25px;
+}
+.icon img {
+	width: 40%;
+}
+.grey {
+	
+	background-color: #313131;
+}
+.kontakt {
+	padding-top: 25px;
+	color: rgba(255,255,255,1.00);
+	font-weight: 400;
+	font-size: 0.9em;
+}
+.kontakt img {
+	padding-top: 20px;
+	width: 60%;
+}
+.footerimg img {
+	width: 30%;
+	float: right;
+	margin-bottom: 25px;
+}
+@media only screen and (max-width: 600px) {
+	.container {
+		padding: 0 30px!important;
+	}
+	.mid {
+		display: inline-block;
+		padding: 0 10px;
+	}
+	.left {
+		float: none;
+		margin-right: 0;
+	}
+	.right {
+		float: none;
+		margin-left: 0;
+	}
+	.footer {
+		display: inline-block;
+	}
+	.icons {
+		display: inline-block;
+		margin: 0 auto;
+	}
+	.icon {
+		width: 100%;
+	}
 }
